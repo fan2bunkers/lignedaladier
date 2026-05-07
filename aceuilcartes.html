@@ -21,7 +21,6 @@ body{
     background:#2b2d2a;
     color:#e5e5e5;
     font-family:'Roboto',sans-serif;
-    min-height:100vh;
 }
 
 /* texture béton */
@@ -35,7 +34,6 @@ body::before{
 }
 
 /* HEADER */
-
 header{
     background:#4a4f45;
     border-bottom:4px solid #111;
@@ -45,22 +43,20 @@ header{
 
 header h1{
     font-family:'Oswald',sans-serif;
-    font-size:4rem;
+    font-size:3.5rem;
     letter-spacing:3px;
     text-transform:uppercase;
-    color:#d9d7c8;
+    color:#d9cf9c;
     text-shadow:3px 3px 0 #111;
 }
 
 /* LAYOUT */
-
 .container{
     display:flex;
     min-height:100vh;
 }
 
-/* SIDEBAR (TA VERSION ORIGINALE) */
-
+/* SIDEBAR (identique à ton site) */
 .sidebar{
     width:280px;
     background:#3a3f36;
@@ -94,39 +90,45 @@ header h1{
 }
 
 /* CONTENT */
-
 .content{
     flex:1;
     padding:40px;
 }
 
-/* MAP BOX */
-
+/* MAP */
 .map-box{
     position:relative;
     max-width:1000px;
     margin:auto;
+
     border:3px solid #444;
+
+    /* FIX IMPORTANT */
+    aspect-ratio: 1000 / 600;
+    overflow:hidden;
 }
 
 .map-box img{
     width:100%;
+    height:100%;
+    object-fit:cover;
     display:block;
 }
 
-/* ZONES CLIQUABLES */
-
+/* ZONES */
 .zone{
     position:absolute;
+    transform:translate(-50%, -50%); /* centre parfait */
+    
     background:rgba(0,0,0,0.65);
     color:#d9cf9c;
     padding:6px 10px;
     font-weight:bold;
     text-decoration:none;
     border:1px solid #666;
-    transition:0.3s;
     font-family:'Oswald',sans-serif;
     letter-spacing:1px;
+    transition:0.3s;
 }
 
 .zone:hover{
@@ -134,17 +136,15 @@ header h1{
     color:#fff;
 }
 
-/* positions approximatives */
+/* positions (plus stables visuellement) */
+.sffl{ top:18%; left:28%; }
+.sfl{ top:32%; left:42%; }
+.sfe{ top:45%; left:54%; }
+.sfma{ top:58%; left:66%; }
+.daa{ top:70%; left:76%; }
+.sda{ top:82%; left:86%; }
 
-.sffl{ top:15%; left:28%; }
-.sfl{ top:30%; left:42%; }
-.sfe{ top:42%; left:54%; }
-.sfma{ top:55%; left:66%; }
-.daa{ top:67%; left:76%; }
-.sda{ top:78%; left:86%; }
-
-/* INFOS */
-
+/* INFO */
 .info{
     max-width:1000px;
     margin:50px auto 0;
@@ -156,9 +156,9 @@ header h1{
 .info h2{
     font-family:'Oswald';
     font-size:2.5rem;
+    margin-bottom:20px;
     color:#d9cf9c;
     text-transform:uppercase;
-    margin-bottom:20px;
     border-bottom:2px solid #777;
     padding-bottom:10px;
 }
@@ -169,7 +169,6 @@ header h1{
 }
 
 /* RESPONSIVE */
-
 @media(max-width:900px){
 
     .container{
@@ -206,7 +205,7 @@ header h1{
     }
 
     header h1{
-        font-size:2.3rem;
+        font-size:2.2rem;
     }
 
     .content{
@@ -217,7 +216,6 @@ header h1{
         font-size:12px;
         padding:4px 6px;
     }
-
 }
 
 </style>
@@ -231,7 +229,6 @@ header h1{
 
 <div class="container">
 
-    <!-- SIDEBAR IDENTIQUE -->
     <nav class="sidebar">
         <ul>
             <li><a href="apropos.html">Qu'est-ce que la ligne Daladier ?</a></li>
@@ -246,10 +243,9 @@ header h1{
 
     <main class="content">
 
-        <!-- CARTE -->
         <div class="map-box">
 
-            <img src="carte.png" alt="Carte des secteurs fortifiés">
+            <img src="carte.png" alt="Carte des secteurs">
 
             <a class="zone sffl" href="#SFFL">SFFL</a>
             <a class="zone sfl" href="#SFL">SFL</a>
@@ -260,24 +256,20 @@ header h1{
 
         </div>
 
-        <!-- TEXTE -->
         <section class="info">
 
             <h2>Organisation des secteurs</h2>
 
             <p>
-                Les secteurs fortifiés du Nord de la France constituent une extension tardive
-                du système défensif français face à la menace allemande.
+                Les secteurs fortifiés du Nord constituent une extension tardive du système défensif français.
             </p>
 
             <p>
-                Ils s’étendent de la mer du Nord jusqu’aux Ardennes et forment une ligne discontinue
-                d’ouvrages CORF, STG et CEZF, complétée par des blockhaus de campagne.
+                Ils regroupent des ouvrages CORF, STG et CEZF destinés à ralentir une percée ennemie venant de Belgique.
             </p>
 
             <p>
-                Leur objectif principal est de ralentir une percée ennemie et de protéger
-                les axes stratégiques menant vers Lille, Valenciennes et Maubeuge.
+                Ces positions formaient une défense en profondeur autour de Lille, Valenciennes et Maubeuge.
             </p>
 
         </section>
