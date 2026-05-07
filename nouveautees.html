@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mises à jour - Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:#2b2d2a;
+    color:#e5e5e5;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Oswald';
+    font-size:3rem;
+    text-transform:uppercase;
+    color:#d9cf9c;
+    letter-spacing:3px;
+    text-shadow:2px 2px 0 #000;
+}
+
+/* LAYOUT GLOBAL (IMPORTANT POUR SUPPRIMER BANDE BLANCHE) */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR IDENTIQUE À TES AUTRES PAGES */
+.sidebar{
+    width:280px;
+    background:#3a3f36;
+    border-right:4px solid #111;
+    padding:30px 20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#d7d7d7;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:block;
+    padding:12px;
+    border-left:5px solid transparent;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#55614f;
+    border-left:5px solid #c2b280;
+    padding-left:20px;
+}
+
+/* CONTENU */
+.content{
+    flex:1;
+    padding:40px;
+}
+
+/* NEWS BOX */
+.news-container{
+    max-width:900px;
+    margin:auto;
+    background:rgba(40,40,40,0.9);
+    border:3px solid #555;
+    padding:30px;
+}
+
+/* ITEM */
+.news-item{
+    display:flex;
+    gap:20px;
+    padding:12px 0;
+    border-bottom:1px solid #555;
+    transition:0.3s;
+}
+
+.news-item:hover{
+    background:#3f4a3b;
+}
+
+/* DATE */
+.date{
+    min-width:120px;
+    font-family:'Oswald';
+    color:#d9cf9c;
+    font-weight:bold;
+}
+
+/* DESCRIPTION */
+.description{
+    flex:1;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:4px solid #111;
+    }
+
+    .sidebar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sidebar li{
+        margin:0;
+    }
+
+    .sidebar a{
+        font-size:1rem;
+        border-left:none;
+        border-bottom:3px solid transparent;
+    }
+
+    .sidebar a:hover{
+        border-left:none;
+        border-bottom:3px solid #c2b280;
+        padding-left:12px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .news-item{
+        flex-direction:column;
+        gap:5px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mises à jour du site</h1>
+</header>
+
+<div class="container">
+
+    <!-- SIDEBAR IDENTIQUE -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="apropos.html">Qu'est-ce que la ligne Daladier ?</a></li>
+            <li><a href="aceuilcartes.html">Cartographie</a></li>
+            <li><a href="blockhaus.html">Blockhaus</a></li>
+            <li><a href="casemates.html">Casemates</a></li>
+            <li><a href="#">Dico</a></li>
+            <li><a href="#">Informations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENU -->
+    <main class="content">
+
+        <div class="news-container">
+
+            <div class="news-item">
+                <div class="date">07/05/2026</div>
+                <div class="description">Création du site</div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
