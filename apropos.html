@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2d2d2d;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+}
+
+/* TEXTURE BÉTON */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1{
+    font-family:'Oswald',sans-serif;
+    font-size:4rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#d9d7c8;
+    text-shadow:3px 3px 0 #111;
+}
+
+/* LAYOUT */
+
+.container{
+    display:flex;
+    min-height:calc(100vh - 120px);
+}
+
+/* SIDEBAR IDENTIQUE */
+
+.sidebar{
+    width:280px;
+    background:#3a3f36;
+    border-right:4px solid #111;
+    padding:30px 20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#d7d7d7;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:block;
+    padding:12px;
+    border-left:5px solid transparent;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#55614f;
+    border-left:5px solid #c2b280;
+    padding-left:20px;
+}
+
+/* CONTENU */
+
+.content{
+    flex:1;
+    padding:50px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/* ARTICLE */
+
+.article{
+    background:rgba(40,40,40,0.85);
+    border:3px solid #555;
+    padding:60px;
+    max-width:1000px;
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,0.05),
+        0 0 20px rgba(0,0,0,0.7);
+}
+
+/* TITRE */
+
+.article h2{
+    font-family:'Oswald',sans-serif;
+    font-size:3.5rem;
+    line-height:1.3;
+    text-transform:uppercase;
+    color:#d8d2b0;
+    text-shadow:2px 2px 0 #000;
+    margin-bottom:40px;
+}
+
+/* TEXTE */
+
+.article p{
+    margin-bottom:30px;
+    font-size:1.15rem;
+    color:#ece9df;
+    text-align:justify;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:4px solid #111;
+    }
+
+    .sidebar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sidebar li{
+        margin-bottom:0;
+    }
+
+    .sidebar a{
+        font-size:1rem;
+        padding:10px 15px;
+        border-left:none;
+        border-bottom:3px solid transparent;
+    }
+
+    .sidebar a:hover{
+        padding-left:15px;
+        border-left:none;
+        border-bottom:3px solid #c2b280;
+    }
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+    .article{
+        padding:30px;
+    }
+
+    .article h2{
+        font-size:2rem;
+    }
+
+    .article p{
+        font-size:1rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>La Ligne Daladier</h1>
+</header>
+
+<div class="container">
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Qu'est-ce que la ligne Daladier ?</a></li>
+            <li><a href="#">Cartographie</a></li>
+            <li><a href="#">Les casemates</a></li>
+            <li><a href="#">Dico</a></li>
+            <li><a href="#">Informations</a></li>
+            <li><a href="#">Mises à jours</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+
+        <section class="article">
+
+            <h2>
+                La Ligne Daladier
+            </h2>
+
+            <p>
+                La ligne Daladier est le prolongement de la ligne Maginot
+                (une succession d'ouvrages et de blockhaus censé protéger
+                la frontière Est et Alpine d'une invasion) le long de la
+                frontière Belge.
+            </p>
+
+            <p>
+                Le 14 Octobre 1936, la Belgique proclame sa neutralité,
+                conscient que les allemands pourrait passer par la Belgique
+                pour envahir la France, il est décidé en urgence de construire
+                une ligne de fortification qui part de la mer du nord et qui
+                fera la jonction avec la ligne Maginot.
+            </p>
+
+            <p>
+                Le projet est en partie soutenu par le ministre Edouard Daladier,
+                la ligne sera baptisée "ligne Daladier" (ou ligne Maginette).
+            </p>
+
+            <p>
+                Bien que la construction commence officiellement en 1937,
+                certaines casemates ont été construites par la C.O.R.F
+                (Commission d'Organisation des Régions Fortifiées)
+                dans les années 1932-1934.
+            </p>
+
+            <p>
+                Ces ouvrages ne sont pas que de simples blockhaus mais
+                une vraie conception où tout a été étudié.
+                Dans ces casemates on retrouve des canons,
+                des mitrailleuses, des cloches pour fusil-mitrailleurs,
+                des sous-sols, des standards téléphoniques,
+                des chambres,... De vrais petits forts.
+            </p>
+
+            <p>
+                Les fortifications construites en 1937-1940 sont des abris
+                de tirs plus modestes reliés par des tranchées et appuyés
+                par des tourelles pour mitrailleuses.
+            </p>
+
+            <p>
+                Pour les blockhaus les plus légers,
+                ce sont les plans de la première région militaire
+                qui seront adoptés.
+                Pour les plus grosses casemates,
+                ce sont des casemates CEZF
+                (Commission d'Etude des Zones Fortifiées)
+                et STG (Section Technique du Génie).
+            </p>
+
+            <p>
+                Les secteurs concernés sont :
+                le secteur fortifié des Flandres,
+                le secteur fortifié de Lille,
+                le secteur fortifié de l'Escaut,
+                le secteur fortifié de Maubeuge
+                et le secteur défensif des Ardennes.
+            </p>
+
+            <p>
+                L'organisation était la suivante :
+                SFFL : 7ème armée Française,
+                SFL : 51ème Division d'Infanterie puis la
+                British Expeditionary Force,
+                SFE : 54ème Régiment d'Infanterie de Forteresse,
+                SFMA : 87ème RIF,
+                SDA : 148ème RIF.
+            </p>
+
+            <p>
+                Ce site vous plonge dans cette histoire en béton !
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
