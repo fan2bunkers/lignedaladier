@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carte - SF Lille</title>
+
+<style>
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background:#2b2d2a;
+    font-family:Arial, sans-serif;
+}
+
+/* TITRE */
+h1{
+    text-align:center;
+    color:#d9cf9c;
+    margin:20px 0 5px 0;
+    text-transform:uppercase;
+    font-family:Arial Black, sans-serif;
+}
+
+/* NOTE SOUS TITRE */
+.note{
+    text-align:center;
+    color:#cfcfcf;
+    font-size:0.95rem;
+    margin-bottom:15px;
+    padding:0 15px;
+}
+
+/* lien */
+.note a{
+    color:#d9cf9c;
+    text-decoration:none;
+    border-bottom:1px solid #d9cf9c;
+}
+
+.note a:hover{
+    opacity:0.8;
+}
+
+/* CONTENEUR CARTE */
+.map-container{
+    width:100%;
+    height:calc(100vh - 120px);
+    background:#3a3f36;
+    border-top:4px solid #111;
+}
+
+/* IFRAME */
+iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Secteur Fortifié de Lille</h1>
+
+<div class="note">
+    La carte montre seulement les constructions françaises, pour celles de la BEF, rendez-vous sur le site :
+    <a href="https://lesblockhauslyssois.fr" target="_blank">https://lesblockhauslyssois.fr</a>
+</div>
+
+<div class="map-container">
+
+    <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=2.8,50.5,3.3,50.8&layer=mapnik">
+    </iframe>
+
+</div>
+
+</body>
+</html>
