@@ -55,11 +55,45 @@ iframe{
     border:0;
     display:block;
 }
+    .top-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:999;
+    background:#3a3f36;
+    border:2px solid #111;
+    color:#d9cf9c;
+    padding:10px 14px;
+    font-family:'Oswald', sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:0.9rem;
+    transition:0.3s;
+    box-shadow:2px 2px 0 #000;
+}
+
+.top-btn:hover{
+    background:#55614f;
+    border-color:#c2b280;
+    transform:translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .top-btn{
+        top:10px;
+        left:10px;
+        font-size:0.8rem;
+        padding:8px 10px;
+    }
+}
 
 </style>
 </head>
 
 <body>
+
+    <a href="aceuilcartes.html" class="top-btn">← Retour</a>
 
 <h1>Secteur Fortifié de Lille</h1>
 
