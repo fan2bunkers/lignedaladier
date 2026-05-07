@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Casemates - Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Roboto',sans-serif;
+    background:#2b2d2a;
+    color:#e5e5e5;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Oswald';
+    text-transform:uppercase;
+    font-size:3rem;
+    color:#d9cf9c;
+    letter-spacing:3px;
+    text-shadow:2px 2px 0 #000;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* LISTE CASMATES */
+.list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(40,40,40,0.9);
+    border:2px solid #555;
+    padding:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#3f4a3b;
+    transform:translateY(-5px);
+}
+
+.card a{
+    text-decoration:none;
+    color:#d9cf9c;
+    font-family:'Oswald';
+    font-size:1.4rem;
+    display:block;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:0.95rem;
+    color:#e5e5e5;
+}
+
+/* TAGS */
+.tag{
+    display:inline-block;
+    font-size:0.8rem;
+    padding:3px 8px;
+    margin-right:5px;
+    background:#55614f;
+    color:#fff;
+    border:1px solid #777;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    header h1{
+        font-size:2rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Les blockhaus</h1>
+</header>
+
+<div class="container">
+
+<div class="list">
+
+    <!-- RAISMES -->
+    <div class="card">
+        <a href="pillboxwindmill.html"> blockhaus windmill</a>
+        <span class="tag">SFL</span>
+        <p>>Blockhaus Hexagonal de la BEF.</p>
+    </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
