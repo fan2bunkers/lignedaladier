@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="icon" type="image/png" href="https://i.postimg.cc/q72Svmqk/Design-sans-titre-(31).png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - La Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2b2d2a;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* FILTRE SOMBRE */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+/* PLAQUE CONTACT */
+.contact-box{
+    background:rgba(40,40,40,0.88);
+    border:3px solid #555;
+    padding:60px;
+    max-width:700px;
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+    position:relative;
+    z-index:2;
+}
+
+/* TITRE */
+.contact-box h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+/* TEXTE */
+.contact-box p{
+    font-size:1.3rem;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+/* EMAIL STYLE */
+.email{
+    font-size:1.5rem;
+    color:#c2b280;
+    font-weight:bold;
+    margin-top:20px;
+    display:inline-block;
+    padding:10px 15px;
+    border:2px solid #555;
+    background:rgba(0,0,0,0.3);
+    letter-spacing:1px;
+}
+
+/* RETOUR */
+.back{
+    margin-top:40px;
+    display:inline-block;
+    text-decoration:none;
+    color:#d7d7d7;
+    border:1px solid #555;
+    padding:10px 15px;
+    transition:0.3s;
+}
+
+.back:hover{
+    background:#55614f;
+    color:#d9cf9c;
+    border-color:#c2b280;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .contact-box{
+        padding:30px;
+    }
+
+    .contact-box h1{
+        font-size:2rem;
+    }
+
+    .email{
+        font-size:1.1rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contact-box">
+
+    <h1>Contact</h1>
+
+    <p>
+        Pour toute demande d'information ou question concernant le site
+        <strong>La Ligne Daladier</strong>, vous pouvez me contacter directement.
+    </p>
+
+    <p>
+        Pour me contacter :
+    </p>
+
+    <div class="email">
+        erwan.merlinpro@gmail.com
+    </div>
+
+    <br>
+
+    <a class="back" href="index.html">← Retour au site</a>
+
+</div>
+
+</body>
+</html>
