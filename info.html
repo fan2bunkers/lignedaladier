@@ -23,8 +23,6 @@ body{
     min-height:100vh;
 }
 
-/* TEXTURE BÉTON */
-
 body::before{
     content:"";
     position:fixed;
@@ -116,8 +114,6 @@ header h1{
         0 0 20px rgba(0,0,0,0.7);
 }
 
-/* TITLES */
-
 .article h2{
     font-family:'Oswald',sans-serif;
     font-size:3rem;
@@ -130,21 +126,49 @@ header h1{
     padding-bottom:15px;
 }
 
-/* TEXT */
-
 .article p{
-    margin-bottom:30px;
+    margin-bottom:25px;
     font-size:1.2rem;
     line-height:1.9;
     color:#ece9df;
     text-align:justify;
 }
 
-/* EMPHASIS */
-
 .highlight{
     color:#c2b280;
     font-weight:bold;
+}
+
+/* LOGO */
+
+.logo-container{
+    text-align:center;
+    margin:50px 0 20px 0;
+}
+
+.logo-container img{
+    max-width:220px;
+    height:auto;
+    border:3px solid #555;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
+
+.logo-container .caption{
+    margin-top:10px;
+    font-size:1rem;
+    color:#cfcfcf;
+    font-style:italic;
+}
+
+/* PLACE BIO (vide pour futur texte) */
+
+.future-text{
+    margin-top:40px;
+    padding-top:30px;
+    border-top:2px solid #666;
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#ece9df;
 }
 
 /* RESPONSIVE */
@@ -161,34 +185,6 @@ header h1{
         border-bottom:4px solid #111;
     }
 
-    .sidebar ul{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
-
-    .sidebar li{
-        margin-bottom:0;
-    }
-
-    .sidebar a{
-        font-size:1rem;
-        padding:10px 15px;
-        border-left:none;
-        border-bottom:3px solid transparent;
-    }
-
-    .sidebar a:hover{
-        padding-left:15px;
-        border-left:none;
-        border-bottom:3px solid #c2b280;
-    }
-
-    header h1{
-        font-size:2.5rem;
-    }
-
     .content{
         padding:20px;
     }
@@ -197,12 +193,8 @@ header h1{
         padding:30px;
     }
 
-    .article h2{
-        font-size:2rem;
-    }
-
-    .article p{
-        font-size:1rem;
+    header h1{
+        font-size:2.5rem;
     }
 }
 
@@ -243,18 +235,28 @@ header h1{
             </p>
 
             <p>
-                À travers des articles, des cartes, des photographies et des
-                recherches historiques, le site présente les blockhaus,
-                casemates et ouvrages militaires édifiés dans les secteurs
-                des Flandres, de Lille, de l’Escaut, de Maubeuge et des Ardennes.
+                À travers des articles, des cartes et des recherches historiques,
+                le site présente les blockhaus, casemates et ouvrages militaires
+                des différents secteurs fortifiés du nord de la France.
             </p>
 
             <p>
-                Destiné aux passionnés d’histoire militaire et de patrimoine
-                fortifié, ce site vous plonge dans l’univers méconnu
-                de la <span class="highlight">Ligne Daladier</span>,
-                parfois surnommée la “ligne Maginette”.
+                Ce projet met en lumière un patrimoine militaire méconnu,
+                parfois appelé la “ligne Maginette”.
             </p>
+
+            <!-- LOGO -->
+
+            <div class="logo-container">
+                <img src="logo.png" alt="logo du site">
+                <div class="caption">logo du site</div>
+            </div>
+
+            <!-- ESPACE FUTUR TEXTE -->
+
+            <div class="future-text">
+                <!-- Ton texte de biographie ou autre contenu viendra ici -->
+            </div>
 
         </section>
 
