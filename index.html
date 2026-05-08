@@ -17,13 +17,31 @@
 }
 
 body{
-    background:#2d2d2d;
     color:#e5e5e5;
     font-family:'Roboto',sans-serif;
     min-height:100vh;
+
+    /* FOND IMAGE */
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    position:relative;
+}
+
+/* FILTRE SOMBRE */
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
 }
 
 /* TEXTURE BÉTON */
+
 body::before{
     content:"";
     position:fixed;
@@ -31,16 +49,19 @@ body::before{
     background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
     opacity:0.15;
     pointer-events:none;
+    z-index:0;
 }
 
 /* HEADER */
 
 header{
-    background:#4a4f45;
+    background:rgba(74,79,69,0.92);
     border-bottom:4px solid #111;
     padding:25px;
     text-align:center;
     box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    position:relative;
+    z-index:2;
 }
 
 header h1{
@@ -57,15 +78,18 @@ header h1{
 .container{
     display:flex;
     min-height:calc(100vh - 120px);
+    position:relative;
+    z-index:2;
 }
 
 /* SIDEBAR */
 
 .sidebar{
     width:280px;
-    background:#3a3f36;
+    background:rgba(58,63,54,0.92);
     border-right:4px solid #111;
     padding:30px 20px;
+    backdrop-filter:blur(3px);
 }
 
 .sidebar ul{
@@ -105,16 +129,18 @@ header h1{
     position:relative;
 }
 
-/* EFFET PLAQUE MILITAIRE */
+/* PLAQUE MILITAIRE */
 
 .hero{
-    background:rgba(40,40,40,0.8);
+    background:rgba(40,40,40,0.82);
     border:3px solid #555;
     padding:60px;
     max-width:900px;
     box-shadow:
         inset 0 0 20px rgba(255,255,255,0.05),
         0 0 20px rgba(0,0,0,0.7);
+
+    backdrop-filter:blur(4px);
 }
 
 .hero h2{
@@ -188,7 +214,7 @@ header h1{
 
 <div class="container">
 
-         <nav class="sidebar">
+    <nav class="sidebar">
         <ul>
             <li><a href="apropos.html">Qu'est-ce que la ligne Daladier ?</a></li>
             <li><a href="aceuilcartes.html">Cartographie</a></li>
@@ -199,6 +225,7 @@ header h1{
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
     <main class="content">
         <div class="hero">
             <h2>
@@ -209,6 +236,27 @@ header h1{
     </main>
 
 </div>
+
+<!-- SCRIPT FOND ALÉATOIRE -->
+
+<script>
+
+const backgrounds = [
+
+    "images/fond1.jpg",
+    "images/fond2.jpg",
+    "images/fond3.jpg",
+    "images/fond4.jpg"
+
+];
+
+const randomImage =
+    backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+document.body.style.backgroundImage =
+    `url('${randomImage}')`;
+
+</script>
 
 </body>
 </html>
