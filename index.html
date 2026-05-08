@@ -190,6 +190,29 @@ header h1{
         border-left:none;
         border-bottom:3px solid #c2b280;
     }
+    /* BOUTON MENTIONS LÉGALES */
+
+.legal-btn{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    font-size:0.9rem;
+    color:#cfcfcf;
+    background:rgba(20,20,20,0.6);
+    padding:8px 12px;
+    border:1px solid #555;
+    border-radius:4px;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    transition:0.3s;
+    z-index:999;
+}
+
+.legal-btn:hover{
+    background:rgba(80,80,80,0.8);
+    color:#d9cf9c;
+    border-color:#c2b280;
+}
 
     header h1{
         font-size:2.5rem;
@@ -258,6 +281,9 @@ document.body.style.backgroundImage =
     `url('${randomImage}')`;
 
 </script>
+    <a href="mentionslegales.html" class="legal-btn">
+    Mentions légales
+</a>
 
 </body>
 </html>
