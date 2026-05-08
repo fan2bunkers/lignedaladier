@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Description - La Ligne Daladier</title>
+<title>Description - Ligne Daladier</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
 <style>
 
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -17,12 +18,12 @@
 }
 
 body{
-    background:#2d2d2d;
+    background:#2b2d2a;
     color:#e5e5e5;
     font-family:'Roboto',sans-serif;
-    min-height:100vh;
 }
 
+/* texture béton */
 body::before{
     content:"";
     position:fixed;
@@ -33,33 +34,29 @@ body::before{
 }
 
 /* HEADER */
-
 header{
     background:#4a4f45;
     border-bottom:4px solid #111;
     padding:25px;
     text-align:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.5);
 }
 
 header h1{
     font-family:'Oswald',sans-serif;
-    font-size:4rem;
+    font-size:3.5rem;
     letter-spacing:3px;
     text-transform:uppercase;
-    color:#d9d7c8;
+    color:#d9cf9c;
     text-shadow:3px 3px 0 #111;
 }
 
 /* LAYOUT */
-
 .container{
     display:flex;
-    min-height:calc(100vh - 120px);
+    min-height:100vh;
 }
 
-/* SIDEBAR */
-
+/* SIDEBAR (VERSION IDENTIQUE À TON MODÈLE) */
 .sidebar{
     width:280px;
     background:#3a3f36;
@@ -93,54 +90,46 @@ header h1{
 }
 
 /* CONTENT */
-
 .content{
     flex:1;
-    padding:50px;
+    padding:40px;
     display:flex;
     justify-content:center;
-    align-items:flex-start;
 }
 
 /* ARTICLE */
-
 .article{
-    background:rgba(40,40,40,0.88);
+    max-width:900px;
+    background:rgba(40,40,40,0.9);
     border:3px solid #555;
     padding:60px;
-    max-width:900px;
-    box-shadow:
-        inset 0 0 20px rgba(255,255,255,0.05),
-        0 0 20px rgba(0,0,0,0.7);
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
 }
 
 .article h2{
     font-family:'Oswald',sans-serif;
     font-size:3rem;
-    line-height:1.3;
     text-transform:uppercase;
-    color:#d8d2b0;
-    text-shadow:2px 2px 0 #000;
-    margin-bottom:40px;
-    border-bottom:2px solid #666;
+    color:#d9cf9c;
+    border-bottom:2px solid #777;
     padding-bottom:15px;
+    margin-bottom:30px;
 }
 
 .article p{
-    margin-bottom:25px;
     font-size:1.2rem;
     line-height:1.9;
-    color:#ece9df;
+    margin-bottom:25px;
     text-align:justify;
 }
 
+/* MOTS IMPORTANT */
 .highlight{
     color:#c2b280;
     font-weight:bold;
 }
 
 /* LOGO */
-
 .logo-container{
     text-align:center;
     margin:50px 0 20px 0;
@@ -148,31 +137,25 @@ header h1{
 
 .logo-container img{
     max-width:220px;
-    height:auto;
     border:3px solid #555;
     box-shadow:0 0 15px rgba(0,0,0,0.6);
 }
 
 .logo-container .caption{
     margin-top:10px;
-    font-size:1rem;
-    color:#cfcfcf;
     font-style:italic;
+    color:#cfcfcf;
 }
 
-/* PLACE BIO (vide pour futur texte) */
-
+/* ESPACE FUTUR TEXTE */
 .future-text{
     margin-top:40px;
     padding-top:30px;
     border-top:2px solid #666;
-    font-size:1.2rem;
-    line-height:1.9;
-    color:#ece9df;
+    min-height:150px;
 }
 
 /* RESPONSIVE */
-
 @media(max-width:900px){
 
     .container{
@@ -185,16 +168,38 @@ header h1{
         border-bottom:4px solid #111;
     }
 
+    .sidebar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sidebar li{
+        margin-bottom:0;
+    }
+
+    .sidebar a{
+        font-size:1rem;
+        border-left:none;
+        border-bottom:3px solid transparent;
+    }
+
+    .sidebar a:hover{
+        border-left:none;
+        border-bottom:3px solid #c2b280;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+
     .content{
         padding:20px;
     }
 
     .article{
         padding:30px;
-    }
-
-    header h1{
-        font-size:2.5rem;
     }
 }
 
@@ -235,27 +240,24 @@ header h1{
             </p>
 
             <p>
-                À travers des articles, des cartes et des recherches historiques,
-                le site présente les blockhaus, casemates et ouvrages militaires
-                des différents secteurs fortifiés du nord de la France.
+                Il présente les blockhaus, casemates et secteurs fortifiés du nord de la France,
+                ainsi que leur organisation et leur rôle stratégique.
             </p>
 
             <p>
-                Ce projet met en lumière un patrimoine militaire méconnu,
-                parfois appelé la “ligne Maginette”.
+                Ce projet met en lumière un patrimoine militaire souvent méconnu,
+                parfois surnommé la “ligne Maginette”.
             </p>
 
             <!-- LOGO -->
-
             <div class="logo-container">
                 <img src="images/logo.png" alt="logo du site">
                 <div class="caption">logo du site</div>
             </div>
 
-            <!-- ESPACE FUTUR TEXTE -->
-
+            <!-- ESPACE LIBRE POUR TON TEXTE -->
             <div class="future-text">
-                <!-- Ton texte de biographie ou autre contenu viendra ici -->
+                <!-- Ton texte (biographie ou autre contenu) sera placé ici -->
             </div>
 
         </section>
