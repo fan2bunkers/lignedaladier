@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mentions légales - Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2b2d2a;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3.2rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#d9cf9c;
+    text-shadow:3px 3px 0 #111;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:280px;
+    background:#3a3f36;
+    border-right:4px solid #111;
+    padding:30px 20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#d7d7d7;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:block;
+    padding:12px;
+    border-left:5px solid transparent;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#55614f;
+    border-left:5px solid #c2b280;
+    padding-left:20px;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+}
+
+/* BOX */
+.box{
+    max-width:900px;
+    background:rgba(40,40,40,0.9);
+    border:3px solid #555;
+    padding:50px;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.box h2{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    color:#d9cf9c;
+    margin-bottom:25px;
+    border-bottom:2px solid #666;
+    padding-bottom:10px;
+}
+
+.box h3{
+    font-family:'Oswald',sans-serif;
+    margin-top:30px;
+    color:#c2b280;
+}
+
+.box p{
+    margin-bottom:20px;
+    line-height:1.7;
+    text-align:justify;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:4px solid #111;
+    }
+
+    .sidebar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sidebar li{
+        margin-bottom:0;
+    }
+
+    .sidebar a{
+        font-size:1rem;
+        border-left:none;
+        border-bottom:3px solid transparent;
+    }
+
+    .sidebar a:hover{
+        border-left:none;
+        border-bottom:3px solid #c2b280;
+        padding-left:12px;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+    .box{
+        padding:25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>La Ligne Daladier</h1>
+</header>
+
+<div class="container">
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="apropos.html">Qu'est-ce que la ligne Daladier ?</a></li>
+            <li><a href="aceuilcartes.html">Cartographie</a></li>
+            <li><a href="blockhaus.html">Les casemates</a></li>
+            <li><a href="#">Dico</a></li>
+            <li><a href="#">Informations</a></li>
+            <li><a href="nouveautees.html">Mises à jours</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+
+        <div class="box">
+
+            <h2>Mentions légales</h2>
+
+            <h3>Éditeur du site</h3>
+            <p>
+                Le site <strong>La Ligne Daladier</strong> est un projet personnel réalisé par :<br><br>
+                <strong>[TON NOM ICI]</strong><br>
+                Projet non professionnel, réalisé dans un cadre historique et personnel.
+            </p>
+
+            <h3>Propriété intellectuelle</h3>
+            <p>
+                Tous les contenus présents sur ce site (textes, images, cartes et éléments graphiques)
+                sont réalisés dans un cadre personnel et historique, sauf mention contraire.
+                Toute reproduction ou utilisation sans autorisation est interdite.
+            </p>
+
+            <h3>Données personnelles</h3>
+            <p>
+                Ce site ne collecte aucune donnée personnelle et n’exploite aucune base de données utilisateurs.
+            </p>
+
+            <h3>Responsabilité</h3>
+            <p>
+                Les informations historiques sont fournies à titre informatif.
+                Malgré les recherches effectuées, des erreurs peuvent exister.
+            </p>
+
+            <h3>Contact</h3>
+            <p>
+                erwan.merlinpro@gmail.com
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
