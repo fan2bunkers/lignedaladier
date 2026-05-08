@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Les symboles utilisés sur les cartes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2d2d2d;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+    position:relative;
+}
+
+/* TEXTURE BÉTON */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    position:relative;
+    z-index:2;
+}
+
+header h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3.5rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#d9d7c8;
+    text-shadow:3px 3px 0 #111;
+}
+
+/* BOUTON RETOUR */
+
+.top-bar{
+    max-width:1100px;
+    margin:25px auto 0 auto;
+    padding:0 20px;
+    position:relative;
+    z-index:2;
+}
+
+.back-button{
+    display:inline-block;
+    background:#55614f;
+    color:#d8d2b0;
+    text-decoration:none;
+    padding:12px 22px;
+    border:2px solid #111;
+    font-family:'Oswald',sans-serif;
+    font-size:1.1rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.back-button:hover{
+    background:#6a775f;
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.7);
+}
+
+/* CONTENU */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    position:relative;
+    z-index:2;
+}
+
+.panel{
+    background:rgba(40,40,40,0.85);
+    border:3px solid #555;
+    padding:50px;
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,0.05),
+        0 0 20px rgba(0,0,0,0.7);
+}
+
+/* TITRES */
+
+h2{
+    font-family:'Oswald',sans-serif;
+    font-size:2.8rem;
+    text-transform:uppercase;
+    color:#d8d2b0;
+    text-shadow:2px 2px 0 #000;
+    margin-bottom:25px;
+    border-bottom:2px solid #666;
+    padding-bottom:10px;
+}
+
+h3{
+    font-family:'Oswald',sans-serif;
+    font-size:2rem;
+    color:#c2b280;
+    margin-top:40px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+/* TEXTE */
+
+p{
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:18px;
+    color:#e0e0e0;
+}
+
+/* IMAGES */
+
+.images{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.images img{
+    max-width:100%;
+    width:260px;
+    border:3px solid #666;
+    box-shadow:0 0 15px rgba(0,0,0,0.7);
+    transition:0.3s;
+}
+
+.images img:hover{
+    transform:scale(1.03);
+}
+
+/* LISTE */
+
+.icons-list{
+    margin-top:20px;
+}
+
+.icons-list p{
+    padding-left:15px;
+    border-left:4px solid #55614f;
+    margin-bottom:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .panel{
+        padding:25px;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    h3{
+        font-size:1.5rem;
+    }
+
+    p{
+        font-size:1rem;
+    }
+
+    .images{
+        flex-direction:column;
+    }
+
+    .images img{
+        width:100%;
+        max-width:320px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>La Ligne Daladier</h1>
+</header>
+
+<!-- BOUTON RETOUR -->
+
+<div class="top-bar">
+    <a href="javascript:history.back()" class="back-button">
+        ← Retour
+    </a>
+</div>
+
+<!-- CONTENU -->
+
+<div class="container">
+
+    <div class="panel">
+
+        <h2>Les symboles utilisés sur les cartes</h2>
+
+        <h3>Les couleurs</h3>
+
+        <p>
+            La couleur orange signifie que le blockhaus ou la casemate
+            était en projet en 1940 et que la construction n’a pas débuté.
+        </p>
+
+        <p>
+            La couleur bleue est utilisée pour les constructions
+            ayant été construites ou commencées.
+        </p>
+
+        <div class="images">
+            <img src="images/image2.png" alt="Carte symbole orange">
+            <img src="images/image1.png" alt="Carte symbole bleu">
+        </div>
+
+        <h3>Les icônes</h3>
+
+        <div class="icons-list">
+
+            <p>Le point sans icône désigne un blockhaus ou une casemate.</p>
+
+            <p>Le carré désigne une cuve pour canon.</p>
+
+            <p>Le losange désigne une tourelle démontable.</p>
+
+            <p>Le téléphone désigne une chambre de coupure.</p>
+
+            <p>Le château désigne un fort.</p>
+
+            <p>Le drapeau désigne un poste de commandement.</p>
+
+            <p>La croix désigne un barrage de route.</p>
+
+            <p>La flamme désigne un dispositif de mines.</p>
+
+            <p>L’avion désigne un aérodrome.</p>
+
+            <p>
+                Les réseaux antichars (rails ou fossés)
+                sont tracés à l’aide de traits bleus.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
