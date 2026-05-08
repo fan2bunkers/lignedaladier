@@ -56,7 +56,7 @@ header h1{
     min-height:100vh;
 }
 
-/* SIDEBAR (VERSION IDENTIQUE À TON MODÈLE) */
+/* SIDEBAR */
 .sidebar{
     width:280px;
     background:#3a3f36;
@@ -123,13 +123,12 @@ header h1{
     text-align:justify;
 }
 
-/* MOTS IMPORTANT */
 .highlight{
     color:#c2b280;
     font-weight:bold;
 }
 
-/* LOGO */
+/* LOGO / IMAGES */
 .logo-container{
     text-align:center;
     margin:50px 0 20px 0;
@@ -147,12 +146,50 @@ header h1{
     color:#cfcfcf;
 }
 
-/* ESPACE FUTUR TEXTE */
-.future-text{
-    margin-top:40px;
+/* BIOGRAPHIE */
+.bio{
+    margin-top:50px;
     padding-top:30px;
     border-top:2px solid #666;
-    min-height:150px;
+}
+
+.bio h3{
+    font-family:'Oswald',sans-serif;
+    font-size:2rem;
+    color:#d9cf9c;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.bio p{
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* PARTENAIRES */
+.partners{
+    margin-top:50px;
+    padding-top:30px;
+    border-top:2px solid #666;
+}
+
+.partners h3{
+    font-family:'Oswald',sans-serif;
+    font-size:2rem;
+    color:#d9cf9c;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.partners a{
+    color:#c2b280;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.partners a:hover{
+    text-decoration:underline;
 }
 
 /* RESPONSIVE */
@@ -183,11 +220,6 @@ header h1{
         font-size:1rem;
         border-left:none;
         border-bottom:3px solid transparent;
-    }
-
-    .sidebar a:hover{
-        border-left:none;
-        border-bottom:3px solid #c2b280;
     }
 
     header h1{
@@ -255,9 +287,46 @@ header h1{
                 <div class="caption">logo du site</div>
             </div>
 
-            <!-- ESPACE LIBRE POUR TON TEXTE -->
-            <div class="future-text">
-                <!-- Ton texte (biographie ou autre contenu) sera placé ici -->
+            <!-- BIOGRAPHIE -->
+            <div class="bio">
+                <h3>Biographie de l'auteur</h3>
+
+                <p>
+                    Je suis Erwan Merlin, depuis tout petit je m'intéresse à l'histoire,
+                    j'ai toujours voulu comprendre le monde qui m'entoure.
+                    Puis je me suis spécialisé sur la seconde guerre mondiale et plus précisément la ligne Maginot.
+                </p>
+
+                <p>
+                    Habitant dans le nord, j'ai toujours eu une admiration pour les blockhaus et savoir leur histoire.
+                    Je me suis tout de suite passionné pour cette histoire méconnue de la ligne Daladier.
+                </p>
+
+                <p>
+                    Aujourd'hui, je vous propose un site web vous permettant de comprendre cette histoire.
+                </p>
+
+                <p>
+                    Pour toutes questions contactez moi ici : <strong>erwan.merlinpro@gmail.com</strong>
+                </p>
+
+                <!-- IMAGE BIO -->
+                <div class="logo-container">
+                    <img src="images/moi.jpg" alt="Moi devant une cloche GFM">
+                    <div class="caption">Moi devant une cloche GFM</div>
+                </div>
+            </div>
+
+            <!-- PARTENAIRES -->
+            <div class="partners">
+                <h3>Mes partenaires</h3>
+
+                <p>
+                    Le groupe <strong>les blockhaus lyssois</strong> :
+                    <a href="https://lesblockhauslyssois.fr" target="_blank">
+                        lesblockhauslyssois.fr
+                    </a>
+                </p>
             </div>
 
         </section>
