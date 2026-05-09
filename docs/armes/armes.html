@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>L’armement de la ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2b2d2a;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    position:relative;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* filtre sombre */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+/* PLAQUE PRINCIPALE */
+.article{
+    background:rgba(40,40,40,0.88);
+    border:3px solid #555;
+    padding:60px;
+    max-width:1000px;
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+    position:relative;
+}
+
+/* BOUTON RETOUR */
+.back-btn{
+    display:inline-block;
+    margin-bottom:30px;
+    padding:10px 15px;
+    border:2px solid #555;
+    color:#d7d7d7;
+    text-decoration:none;
+    font-family:'Oswald',sans-serif;
+    letter-spacing:1px;
+    transition:0.3s;
+    background:rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    background:#55614f;
+    color:#d9cf9c;
+    border-color:#c2b280;
+}
+
+/* TITRES */
+.article h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+.article h2{
+    font-family:'Oswald',sans-serif;
+    font-size:2.2rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin:40px 0 20px 0;
+    letter-spacing:2px;
+}
+
+.article h3{
+    font-family:'Oswald',sans-serif;
+    font-size:1.5rem;
+    color:#c2b280;
+    margin:25px 0 15px 0;
+    letter-spacing:1px;
+}
+
+/* TEXTE */
+.article p{
+    font-size:1.1rem;
+    margin-bottom:20px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* LISTES */
+.article ul{
+    margin:20px 0 20px 30px;
+}
+
+.article li{
+    margin-bottom:12px;
+    line-height:1.7;
+    font-size:1.05rem;
+}
+
+/* IMAGES */
+.article img{
+    width:100%;
+    height:auto;
+    margin:20px 0;
+    border:2px solid #555;
+}
+
+/* HR */
+.article hr{
+    border:none;
+    height:2px;
+    background:#555;
+    margin:40px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+
+    .article{
+        padding:30px;
+    }
+
+    .article h1{
+        font-size:2rem;
+    }
+
+    .article h2{
+        font-size:1.6rem;
+    }
+
+    .article h3{
+        font-size:1.2rem;
+    }
+
+    .article p,
+    .article li{
+        font-size:1rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="article">
+
+<a class="back-btn" href="https://lignedaladier.fr/docs/equipement.html">← Retour</a>
+
+<h1>L’armement de la ligne Daladier</h1>
+
+<hr>
+
+<h2>Le canon de 75 mm modèle 1897</h2>
+
+<p>Le canon de 75 mm modèle 1897 est l’une des armes françaises les plus célèbres de la Première et de la Seconde Guerre mondiale. Mis au point à la fin du XIXe siècle, il fut adapté aux fortifications de la Ligne Maginot et de la ligne Daladier.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Tir d’artillerie à longue portée.</li>
+<li>Destruction des regroupements ennemis.</li>
+<li>Appui des ouvrages voisins.</li>
+<li>Barrages défensifs.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 75 mm.</li>
+<li>Portée : plus de 10 km selon les versions.</li>
+<li>Cadence de tir très élevée pour l’époque.</li>
+<li>Utilisation d’obus explosifs et perforants.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le canon de 75 possédait un système de recul hydropneumatique révolutionnaire permettant au tube de reculer sans déplacer l’affût.<br>
+Grâce à ce système, le canon pouvait tirer rapidement sans devoir être remis en position après chaque coup.</p>
+
+<p>Dans les fortifications, les pièces étaient installées :</p>
+
+<ul>
+<li>en casemate ;</li>
+<li>sous tourelle blindée ;</li>
+<li>parfois sur rails internes pour faciliter les déplacements.</li>
+</ul>
+
+<p>Le 75 mm constituait la principale arme d’appui des ouvrages français.</p>
+
+<img src="images/image5.png" alt="Canon de 75 mm">
+
+<p>Un canon de 75 au musée france 40 de Fismes.</p>
+
+<hr>
+
+<h2>Le canon antichar de 47 mm modèle 1934</h2>
+
+<p>Le canon antichar de 47 mm modèle 1934 était l’une des armes antichars les plus puissantes de l’armée française en 1940. Développé spécialement pour les fortifications, il équipait les casemates et les entrées d’ouvrages.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Destruction des chars ennemis.</li>
+<li>Défense des routes et axes stratégiques.</li>
+<li>Protection des entrées d’ouvrages.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 47 mm.</li>
+<li>Cadence : 15 à 20 coups par minute.</li>
+<li>Portée efficace : environ 1 500 mètres.</li>
+<li>Servi par un équipage de trois hommes.</li>
+<li>Poids du canon : environ 330 kg.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le canon utilisait une culasse à vis de type Nordenfeld et un double frein hydraulique absorbant le recul.<br>
+La pièce était suspendue à un chariot roulant sur un bi-rail fixé au plafond de la chambre de tir.</p>
+
+<p>Le canon pouvait être remplacé rapidement par un jumelage de mitrailleuses Reibel MAC 31 grâce à un système interchangeable installé dans la même trémie blindée.</p>
+
+<p>Les obus perforants du 47mm étaient capables de traverser tous les blindages allemands rencontrés en 1940.</p>
+
+<img src="images/image1.jpg" alt="Canon de 47 mm">
+
+<p>Canon de 47 suspendu à un rail.</p>
+
+<img src="images/image7.jpg" alt="Canon de 47 casemate">
+
+<p>Canon de 47 de la casemate du mont des bruyères.</p>
+
+<hr>
+
+<h2>Le canon antichar de 25 mm SA34</h2>
+
+<p>Le canon de 25 mm était une arme antichar légère utilisée dans les petits blockhaus et les positions de campagne.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Combat contre les véhicules blindés légers.</li>
+<li>Défense rapprochée des ouvrages.</li>
+<li>Protection des routes et des points de passage.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 25 mm.</li>
+<li>Arme légère et relativement mobile.</li>
+<li>Vitesse initiale élevée.</li>
+<li>Bonne précision.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le canon tirait des obus perforants capables de percer les blindages légers des automitrailleuses et des chars légers ennemis.<br>
+Sa petite taille permettait de l’installer facilement dans des blockhaus plus simples que ceux de la Ligne Maginot principale.</p>
+
+<p>Même si sa puissance devenait insuffisante contre les chars lourds allemands les plus récents, il restait efficace contre de nombreux véhicules de 1940.</p>
+
+<img src="images/image4.png" alt="Canon de 25 mm">
+
+<p>Un canon de 25 au musée France 40 de Fismes.</p>
+
+<hr>
+
+<h2>La mitrailleuse Hotchkiss modèle 1914</h2>
+
+<p>La mitrailleuse Hotchkiss modèle 1914 était une arme automatique lourde très robuste utilisée dans les fortifications françaises.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Défense contre l’infanterie.</li>
+<li>Tir de barrage.</li>
+<li>Protection des fossés et des abords.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 8 mm Lebel.</li>
+<li>Cadence théorique : environ 450 coups/minute.</li>
+<li>Refroidissement par air.</li>
+<li>Alimentation par bandes métalliques rigides.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>La mitrailleuse fonctionnait grâce à l’emprunt des gaz produits lors du tir.<br>
+Sa conception très solide lui permettait de fonctionner longtemps sans panne ni surchauffe importante.</p>
+
+<p>Dans les fortifications, elle était souvent installée :</p>
+
+<ul>
+<li>derrière des créneaux blindés ;</li>
+<li>en casemate ;</li>
+<li>en position de flanquement.</li>
+</ul>
+
+<p>Elle servait principalement à créer des tirs croisés entre plusieurs ouvrages afin d’empêcher toute progression ennemie.</p>
+
+<img src="images/image6.png" alt="Mitrailleuse Hotchkiss">
+
+<p>Une mitrailleuse Hotchkiss au musée france 40 de Fismes.</p>
+
+<hr>
+
+<h2>Le jumelage de mitrailleuses Reibel MAC 31</h2>
+
+<p>Le jumelage Reibel MAC 31 constituait l’arme automatique principale des ouvrages fortifiés français.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Tir continu contre l’infanterie.</li>
+<li>Défense des intervalles entre ouvrages.</li>
+<li>Protection rapprochée des blocs.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Deux mitrailleuses de 7,5 mm.</li>
+<li>Chargeurs tambours de 150 cartouches.</li>
+<li>Portée pratique : environ 1 200 mètres.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le système utilisait deux armes montées côte à côte.<br>
+Pendant qu’une mitrailleuse tirait, l’autre pouvait refroidir ou être rechargée, permettant ainsi un feu presque continu.</p>
+
+<p>Dans certains ouvrages, le jumelage pouvait être retiré afin d’installer à sa place le canon antichar de 47 mm dans le même créneau blindé.</p>
+
+<img src="images/image8.jpg" alt="Jumelage Reibel">
+
+<p>Le jumelage de mitrailleuses de la casemate du mont des bruyères.</p>
+
+<hr>
+
+<h2>Le mortier de 50 mm modèle 1935</h2>
+
+<p>Le mortier de 50 mm modèle 1935 était une arme à tir courbe conçue spécialement pour les fortifications. Son développement débute dès 1931 à la Manufacture d’Armes de Châtellerault.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Défense rapprochée.</li>
+<li>Tir dans les angles morts.</li>
+<li>Destruction des ennemis cachés derrière des obstacles.</li>
+<li>Protection des fossés des ouvrages.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 50 mm.</li>
+<li>Poids : environ 11 kg.</li>
+<li>Chargement par la culasse.</li>
+<li>Portée maximale :
+    <ul>
+        <li>750 m sous cloche GFM ;</li>
+        <li>jusqu’à 1 065 m en casemate.</li>
+    </ul>
+</li>
+<li>Cadence :
+    <ul>
+        <li>10 à 12 coups/minute avec un servant ;</li>
+        <li>jusqu’à 30 coups/minute avec deux servants.</li>
+    </ul>
+</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le mortier tirait des projectiles explosifs empennés selon une trajectoire courbe.<br>
+La portée était réglée par un système d’échappement des gaz.</p>
+
+<p>Le mortier pouvait être installé :</p>
+
+<ul>
+<li>dans les cloches GFM ;</li>
+<li>dans des créneaux de casemate ;</li>
+<li>dans certains créneaux pour fusil-mitrailleur.</li>
+</ul>
+
+<p>Cette arme était particulièrement utile pour atteindre les ennemis invisibles depuis les armes à tir direct.</p>
+
+<p>Cependant, les mortiers installés dans les cloches se révélèrent parfois vulnérables aux tirs ennemis directs durant les combats de 1940.</p>
+
+<img src="images/image2.jpg" alt="Mortier de 50 mm">
+
+<p>Un mortier de 50mm à la casemate du mont des bruyères.</p>
+
+<hr>
+
+<h2>Le fusil-mitrailleur MAC 24/29</h2>
+
+<p>Le fusil-mitrailleur modèle 1924/29 était l’arme légère standard de l’armée française.</p>
+
+<h3>Rôle</h3>
+
+<ul>
+<li>Défense rapprochée.</li>
+<li>Protection des entrées.</li>
+<li>Soutien de l’infanterie.</li>
+</ul>
+
+<h3>Caractéristiques techniques</h3>
+
+<ul>
+<li>Calibre : 7,5 mm.</li>
+<li>Chargeur de 25 cartouches.</li>
+<li>Arme légère et maniable.</li>
+<li>Bonne fiabilité.</li>
+</ul>
+
+<h3>Fonctionnement</h3>
+
+<p>Le FM 24/29 utilisait un système à emprunt de gaz permettant le tir automatique.<br>
+Compact et facile à utiliser, il était parfaitement adapté aux espaces réduits des fortifications.</p>
+
+<p>Il pouvait être déplacé rapidement entre plusieurs créneaux afin de couvrir différents secteurs.</p>
+
+<img src="images/image3.png" alt="FM 24/29">
+
+<p>Un FM 24/29 au musée france 40 de Fismes.</p>
+
+</div>
+
+</body>
+</html>
