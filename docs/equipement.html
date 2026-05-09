@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blockhaus - Ligne Daladier</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:#2b2d2a;
+    color:#e5e5e5;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* HEADER */
+header{
+    background:#4a4f45;
+    border-bottom:4px solid #111;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-family:'Oswald';
+    font-size:3rem;
+    text-transform:uppercase;
+    color:#d9cf9c;
+    letter-spacing:3px;
+    text-shadow:2px 2px 0 #000;
+}
+
+/* LAYOUT IDENTIQUE */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ✔ SIDEBAR EXACTE (celle que tu utilises ailleurs) */
+.sidebar{
+    width:280px;
+    background:#3a3f36;
+    border-right:4px solid #111;
+    padding:30px 20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#d7d7d7;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:block;
+    padding:12px;
+    border-left:5px solid transparent;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#55614f;
+    border-left:5px solid #c2b280;
+    padding-left:20px;
+}
+
+/* CONTENU */
+.content{
+    flex:1;
+    padding:40px;
+}
+
+/* LISTE */
+.list{
+    max-width:1000px;
+    margin:auto;
+    background:rgba(40,40,40,0.9);
+    border:3px solid #555;
+    padding:30px;
+}
+
+.list h2{
+    font-family:'Oswald';
+    font-size:2.5rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    border-bottom:2px solid #777;
+    padding-bottom:10px;
+}
+
+/* BLOCKLIST STYLE */
+.blocklist{
+    list-style:none;
+}
+
+.blocklist li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-bottom:1px solid #555;
+    transition:0.3s;
+}
+
+.blocklist li:hover{
+    background:#3f4a3b;
+}
+
+.blocklist a{
+    text-decoration:none;
+    color:#d9cf9c;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+/* TAG */
+.tag{
+    font-size:0.75rem;
+    padding:3px 8px;
+    background:#55614f;
+    border:1px solid #777;
+    color:#fff;
+    white-space:nowrap;
+}
+
+/* RESPONSIVE IDENTIQUE AUX AUTRES PAGES */
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:4px solid #111;
+    }
+
+    .sidebar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sidebar li{
+        margin:0;
+    }
+
+    .sidebar a{
+        font-size:1rem;
+        border-left:none;
+        border-bottom:3px solid transparent;
+    }
+
+    .sidebar a:hover{
+        border-left:none;
+        border-bottom:3px solid #c2b280;
+        padding-left:12px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Les casemates - Ligne Daladier</h1>
+</header>
+
+<div class="container">
+
+    <!-- ✔ SIDEBAR IDENTIQUE PARTOUT -->
+          <nav class="sidebar">
+        <ul>
+            <li><a href="apropos.html">Qu'est-ce que la ligne Daladier ?</a></li>
+            <li><a href="aceuilcartes.html">Cartographie</a></li>
+            <li><a href="blockhaus.html">Les casemates</a></li>
+            <li><a href="dico.html">Dico</a></li>
+            <li><a href="info.html">Informations</a></li>
+            <li><a href="nouveautees.html">Mises à jours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+
+        <section class="list">
+
+            <h2>Les casemates</h2>
+
+            <ul class="blocklist">
+
+                <li>
+                    <a href="pillboxwindmill.html">Armement de la ligne</a>
+                    <a href="pillboxwindmill.html">Les portes blindées</a>
+                    <a href="pillboxwindmill.html">Les cloches</a>
+                    <a href="pillboxwindmill.html">La trémie Pamart-Lemaigre</a>
+                    <a href="pillboxwindmill.html">L'affut type Lille</a>
+                    <a href="pillboxwindmill.html">La tourelle démontable</a>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
