@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Les portes blindées</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2b2d2a;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    position:relative;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* filtre sombre */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+/* PLAQUE PRINCIPALE */
+.article{
+    background:rgba(40,40,40,0.88);
+    border:3px solid #555;
+    padding:60px;
+    max-width:1000px;
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+}
+
+/* BOUTON RETOUR */
+.back-btn{
+    display:inline-block;
+    margin-bottom:30px;
+    padding:10px 15px;
+    border:2px solid #555;
+    color:#d7d7d7;
+    text-decoration:none;
+    font-family:'Oswald',sans-serif;
+    letter-spacing:1px;
+    transition:0.3s;
+    background:rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    background:#55614f;
+    color:#d9cf9c;
+    border-color:#c2b280;
+}
+
+/* TITRES */
+.article h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+.article h2{
+    font-family:'Oswald',sans-serif;
+    font-size:2.2rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    margin:40px 0 20px 0;
+    letter-spacing:2px;
+}
+
+/* TEXTE */
+.article p{
+    font-size:1.1rem;
+    margin-bottom:20px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* IMAGES */
+.article img{
+    width:100%;
+    height:auto;
+    margin:20px 0 10px 0;
+    border:2px solid #555;
+}
+
+/* LÉGENDE */
+.caption{
+    text-align:center;
+    font-size:0.95rem;
+    opacity:0.85;
+    margin-bottom:25px;
+}
+
+/* HR */
+.article hr{
+    border:none;
+    height:2px;
+    background:#555;
+    margin:40px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+
+    .article{
+        padding:30px;
+    }
+
+    .article h1{
+        font-size:2rem;
+    }
+
+    .article h2{
+        font-size:1.6rem;
+    }
+
+    .article p{
+        font-size:1rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="article">
+
+<a class="back-btn" href="https://lignedaladier.fr/docs/equipement.html">← Retour</a>
+
+<h1>Les portes blindées</h1>
+
+<hr>
+
+<h2>La porte type A</h2>
+
+<img src="images/image4.png" alt="Porte type A">
+<p class="caption">Schéma ©Les blockhaus lyssois.</p>
+
+<p>
+La porte de type A est une porte blindée présente sur les blockhaus français. Elle dispose d’un créneau pour FM 24/29 permettant d’assurer un tir direct sur l’ennemi.
+</p>
+
+<hr>
+
+<h2>La porte type B</h2>
+
+<img src="images/image3.png" alt="Porte type B">
+<p class="caption">Schéma ©Les blockhaus lyssois.</p>
+
+<p>
+La porte de type B est utilisée dans plusieurs types de blockhaus français (N1f, N2f, N1d/g, N2d/g). Elle est composée de deux parties afin de faciliter l’évacuation du bloc.
+</p>
+
+<hr>
+
+<h2>La porte type C</h2>
+
+<img src="images/image1.png" alt="Porte type C">
+<p class="caption">Schéma ©Les blockhaus lyssois.</p>
+
+<p>
+La porte de type C est une porte blindée équipée d’un créneau de tir pour fusil-mitrailleur, en plus de son système en deux parties pour l’évacuation.
+</p>
+
+<hr>
+
+<h2>La porte type D</h2>
+
+<img src="images/image2.png" alt="Porte type D">
+<p class="caption">Schéma ©Les blockhaus lyssois.</p>
+
+<p>
+La porte de type D est conçue pour le passage du matériel dans le blockhaus. Elle est destinée à la logistique et non au combat.
+</p>
+
+<hr>
+
+<p style="text-align:right;">
+Sources : Les blockhaus lyssois
+</p>
+
+</div>
+
+</body>
+</html>
