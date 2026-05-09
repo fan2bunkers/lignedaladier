@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La trémie type Lille</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#2b2d2a;
+    color:#e5e5e5;
+    font-family:'Roboto',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    position:relative;
+}
+
+/* texture béton */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    opacity:0.15;
+    pointer-events:none;
+}
+
+/* filtre sombre */
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+/* PLAQUE */
+.article{
+    background:rgba(40,40,40,0.88);
+    border:3px solid #555;
+    padding:60px;
+    max-width:1000px;
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+}
+
+/* TITRE */
+h1{
+    font-family:'Oswald',sans-serif;
+    font-size:3rem;
+    color:#d9cf9c;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+/* BOUTON RETOUR */
+.back{
+    display:inline-block;
+    margin-bottom:25px;
+    padding:10px 15px;
+    border:2px solid #555;
+    color:#e5e5e5;
+    text-decoration:none;
+    font-family:'Oswald',sans-serif;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+.back:hover{
+    background:#55614f;
+    color:#d9cf9c;
+    border-color:#c2b280;
+}
+
+/* TEXTE */
+p{
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:18px;
+    text-align:justify;
+}
+
+h2{
+    font-family:'Oswald',sans-serif;
+    font-size:2rem;
+    color:#d9cf9c;
+    margin:30px 0 15px 0;
+}
+
+/* IMAGE */
+img{
+    width:100%;
+    height:auto;
+    margin:25px 0 10px 0;
+    border:2px solid #555;
+}
+
+/* LÉGENDE */
+.legend{
+    font-size:0.95rem;
+    opacity:0.85;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* HR */
+hr{
+    border:none;
+    height:2px;
+    background:#555;
+    margin:40px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="article">
+
+<a class="back" href="https://lignedaladier.fr/docs/equipement.html">← Retour</a>
+
+<h1>La trémie type Lille</h1>
+
+<p>
+La trémie type Lille est un dispositif de cuirassement développé à la fin des années 1930 par la Direction des Travaux du Génie de la 1ère Région Militaire, dans le secteur de Lille. Elle a été conçue afin d’équiper certains blockhaus de type STG construits entre 1937 et 1938, notamment dans les secteurs du Mont-Noir et de Maulde. Ce système répond à un besoin local d’adaptation des embrasures de tir pour les mitrailleuses Hotchkiss 8 mm modèle 1914, en l’absence de directives techniques précises venant des services centraux du Génie.
+</p>
+
+<p>
+Cette trémie constitue donc une initiative régionale, développée indépendamment pour résoudre un problème concret : la protection des ouvertures de tir des blockhaus. Elle remplace une embrasure classique par un ensemble blindé plus élaboré, destiné à réduire la vulnérabilité de l’arme et de son servant face aux tirs directs ennemis et aux éclats d’obus. L’objectif principal était d’améliorer la survie des positions fortifiées tout en conservant une capacité de tir efficace.
+</p>
+
+<h2>Conception technique</h2>
+
+<p>
+Sur le plan technique, la trémie type Lille se distingue par son système de support articulé de la mitrailleuse Hotchkiss. Contrairement à d’autres modèles de trémies plus standardisés, elle repose sur un dispositif spécifique intégrant une pièce cylindrique mobile montée sur suspension élastique.
+</p>
+
+<p>
+Ce système permet au carter blindé de l’arme d’effectuer de légers mouvements en hausse dans l’embrasure, tout en restant protégé. Cette conception diffère notamment des systèmes à rotule sphérique employés dans d’autres modèles, où le manchon blindé entoure complètement l’arme.
+</p>
+
+<h2>Champ de tir</h2>
+
+<p>
+L’un des éléments essentiels de cette trémie est son champ de tir horizontal, qui atteint environ 60 degrés. Cette amplitude permettait une couverture efficace du terrain environnant, tout en maintenant une ouverture relativement réduite dans la façade du blockhaus, limitant ainsi les points faibles structurels.
+</p>
+
+<h2>Déploiement</h2>
+
+<p>
+Les essais ayant donné satisfaction, ce modèle a ensuite été conservé et installé dans plusieurs blockhaus de la région des Flandres et de l’Escaut.
+</p>
+
+<h2>Importance historique</h2>
+
+<p>
+D’un point de vue historique, cette trémie illustre parfaitement la capacité d’adaptation des ingénieurs militaires locaux face aux contraintes opérationnelles. Faute de standardisation immédiate, la 1ère Région Militaire a su développer une solution efficace, ensuite testée officiellement lors d’essais balistiques à Bourges en 1939.
+</p>
+
+<p>
+Ces essais comparatifs ont permis de situer ses performances face à d’autres modèles de cuirassements, confirmant son intérêt pour les ouvrages déjà construits.
+</p>
+
+<hr>
+
+<img src="images/image1.jpg" alt="Trémie type Lille">
+
+<p class="legend">Trémie type Lille installée dans un blockhaus STG (région des Flandres).</p>
+
+<img src="images/image2.jpg" alt="Système Hotchkiss trémie Lille">
+
+<p class="legend">Détail du système articulé de la mitrailleuse Hotchkiss 1914.</p>
+
+</div>
+
+</body>
+</html>
