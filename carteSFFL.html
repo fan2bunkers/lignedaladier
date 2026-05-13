@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="icon" type="image/png" href="https://i.postimg.cc/q72Svmqk/Design-sans-titre-(31).png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carte - SF Lille</title>
+
+<style>
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background:#2b2d2a;
+    font-family:Arial, sans-serif;
+}
+
+/* TITRE */
+h1{
+    text-align:center;
+    color:#d9cf9c;
+    margin:20px 0 5px 0;
+    text-transform:uppercase;
+    font-family:Arial Black, sans-serif;
+}
+
+/* NOTE */
+.note{
+    text-align:center;
+    color:#cfcfcf;
+    font-size:0.95rem;
+    margin-bottom:15px;
+    padding:0 15px;
+}
+
+.note a{
+    color:#d9cf9c;
+    text-decoration:none;
+    border-bottom:1px solid #d9cf9c;
+}
+
+/* CARTE */
+.map-container{
+    width:100%;
+    height:calc(100vh - 120px);
+    background:#3a3f36;
+    border-top:4px solid #111;
+}
+
+/* iframe propre */
+iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+    .top-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:999;
+    background:#3a3f36;
+    border:2px solid #111;
+    color:#d9cf9c;
+    padding:10px 14px;
+    font-family:'Oswald', sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:0.9rem;
+    transition:0.3s;
+    box-shadow:2px 2px 0 #000;
+}
+
+.top-btn:hover{
+    background:#55614f;
+    border-color:#c2b280;
+    transform:translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .top-btn{
+        top:10px;
+        left:10px;
+        font-size:0.8rem;
+        padding:8px 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <a href="aceuilcartes.html" class="top-btn">← Retour</a>
+
+<h1>Secteur Fortifié des Flandres</h1>
+
+<div class="map-container">
+
+    <!-- ✔ ICI seulement l’URL -->
+    <iframe 
+        src="https://umap.openstreetmap.fr/fr/map/secteur-fortifie-des-flandres_1403928=true"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+</body>
+</html>
