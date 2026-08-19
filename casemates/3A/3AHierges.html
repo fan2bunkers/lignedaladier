@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blockhaus 3A Hierges</title>
+
+    <link rel="icon" type="image/png"
+        href="https://i.postimg.cc/q72Svmqk/Design-sans-titre-(31).png" />
+
+    <!-- POLICES -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #2b2d2a;
+            color: #e5e5e5;
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        /* Texture béton */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        /* Assombrissement */
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        /* CONTENU */
+        .article {
+            background: rgba(40, 40, 40, 0.88);
+            border: 3px solid #555;
+            padding: 60px;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+
+        /* BOUTON RETOUR */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 15px;
+            border: 2px solid #555;
+            color: #d7d7d7;
+            text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .back-btn:hover {
+            background: #55614f;
+            color: #d9cf9c;
+            border-color: #c2b280;
+        }
+
+        /* TITRES */
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            color: #d9cf9c;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            color: #d9cf9c;
+            margin: 35px 0 15px 0;
+            letter-spacing: 1px;
+        }
+
+        /* TEXTE */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* LISTES */
+        ul {
+            margin: 15px 0 25px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* IMAGES */
+        img {
+            width: 100%;
+            height: auto;
+            margin: 25px 0 10px 0;
+            border: 2px solid #555;
+            display: block;
+        }
+
+        /* LÉGENDES */
+        .legend {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        /* SOURCES */
+        .sources {
+            text-align: right;
+            opacity: 0.85;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        /* SÉPARATEUR */
+        hr {
+            border: none;
+            height: 2px;
+            background: #555;
+            margin: 40px 0;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px;
+            }
+
+            .article {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p,
+            li {
+                font-size: 1rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="article">
+
+        <a class="back-btn" href="https://lignedaladier.fr/blockhaus.html">
+            ← Retour
+        </a>
+
+        <h1>Blockhaus 3A Hierges</h1>
+
+        <p>
+            Blockhaus type Barbeyrac allégé.
+        </p>
+
+        <h2>Équipement</h2>
+
+        <ul>
+            <li>1 créneau pour canon de 25 mm SA.</li>
+            <li>1 créneau pour une mitrailleuse Hotchkiss 1914.</li>
+        </ul>
+
+        <hr>
+
+        <img src="images/image1.png" alt="Façade du blockhaus">
+
+        <p class="legend">
+            Façade.
+        </p>
+
+        <img src="images/image3.png" alt="Créneau du blockhaus">
+
+        <p class="legend">
+            Un créneau.
+        </p>
+
+        <img src="images/image4.png" alt="Château à proximité du blockhaus">
+
+        <p class="legend">
+            Château à proximité.
+        </p>
+
+        <img src="images/image2.png" alt="Détail du château à proximité">
+
+        <p class="legend">
+            Il pourrait s’agir d’un créneau de tir aménagé dans une des tours.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
