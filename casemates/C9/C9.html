@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casemate Trieux d'Escautpont Ouest - C9</title>
+
+    <link rel="icon" type="image/png"
+        href="https://i.postimg.cc/q72Svmqk/Design-sans-titre-(31).png" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#2b2d2a;
+            color:#e5e5e5;
+            font-family:'Roboto',sans-serif;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px;
+            position:relative;
+        }
+
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            background-image:url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            opacity:0.15;
+            pointer-events:none;
+        }
+
+        body::after{
+            content:"";
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,0.45);
+            z-index:-1;
+        }
+
+        .article{
+            background:rgba(40,40,40,0.88);
+            border:3px solid #555;
+            padding:60px;
+            max-width:1000px;
+            width:100%;
+            box-shadow:0 0 25px rgba(0,0,0,0.7);
+        }
+
+        .back-btn{
+            display:inline-block;
+            margin-bottom:30px;
+            padding:10px 15px;
+            border:2px solid #555;
+            color:#d7d7d7;
+            text-decoration:none;
+            font-family:'Oswald',sans-serif;
+            letter-spacing:1px;
+            transition:0.3s;
+            background:rgba(0,0,0,0.2);
+        }
+
+        .back-btn:hover{
+            background:#55614f;
+            color:#d9cf9c;
+            border-color:#c2b280;
+        }
+
+        h1{
+            font-family:'Oswald',sans-serif;
+            font-size:3rem;
+            color:#d9cf9c;
+            text-transform:uppercase;
+            text-align:center;
+            margin-bottom:40px;
+            letter-spacing:2px;
+        }
+
+        h2{
+            font-family:'Oswald',sans-serif;
+            font-size:2rem;
+            color:#d9cf9c;
+            margin:35px 0 15px 0;
+            letter-spacing:1px;
+        }
+
+        p{
+            font-size:1.1rem;
+            line-height:1.8;
+            margin-bottom:18px;
+            text-align:justify;
+        }
+
+        ul{
+            margin:15px 0 25px 30px;
+        }
+
+        li{
+            margin-bottom:10px;
+            line-height:1.7;
+            font-size:1.05rem;
+        }
+
+        img{
+            width:100%;
+            height:auto;
+            margin:25px 0 10px 0;
+            border:2px solid #555;
+            display:block;
+        }
+
+        .legend{
+            font-size:0.95rem;
+            opacity:0.85;
+            margin-bottom:35px;
+            text-align:center;
+        }
+
+        .sources{
+            text-align:right;
+            opacity:0.85;
+            margin-top:30px;
+            font-style:italic;
+        }
+
+        hr{
+            border:none;
+            height:2px;
+            background:#555;
+            margin:40px 0;
+        }
+
+        @media(max-width:768px){
+            body{
+                padding:20px;
+            }
+
+            .article{
+                padding:30px;
+            }
+
+            h1{
+                font-size:2.2rem;
+            }
+
+            h2{
+                font-size:1.5rem;
+            }
+
+            p,
+            li{
+                font-size:1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="article">
+        <a class="back-btn" href="https://lignedaladier.fr/blockhaus.html">← Retour</a>
+
+        <h1>Casemate Trieux d'Escautpont Ouest - C9</h1>
+
+        <p>Casemate CORF de flanquement simple type Nord construite en 1932-34.</p>
+
+        <h2>Équipement</h2>
+
+        <ul>
+            <li>1 créneau pour canon de 47 mm ou jumelage de mitrailleuses.</li>
+            <li>1 créneau pour un jumelage de mitrailleuses.</li>
+            <li>2 (+ un sur la porte) créneaux pour FM 24/29.</li>
+            <li>1 cloche type A modifiée B.</li>
+        </ul>
+
+        <hr>
+
+        <img src="images/image2.png" alt="Les créneaux et le fossé diamant">
+        <p class="legend">Les créneaux et le fossé diamant.</p>
+
+        <img src="images/image1.png" alt="Entrée de la casemate">
+        <p class="legend">Entrée.</p>
+
+        <hr>
+
+        <p class="sources">
+            Sources : Association Maginot Escaut, WikiMaginot, documents personnels.
+        </p>
+
+        <p>
+            Avertissement : L'exploration de ces ouvrages militaires est strictement déconseillée.
+            Ces constructions anciennes, laissées à l'abandon, présentent des risques structurels
+            majeurs (instabilité, effondrements, débris). De plus, ces lieux sont devenus des
+            refuges naturels pour la faune, notamment les chauves-souris, dont la tranquillité
+            doit être préservée. Votre sécurité est votre seule responsabilité ; toute entrée est
+            aux risques et périls du visiteur.
+        </p>
+    </div>
+</body>
+
+</html>
